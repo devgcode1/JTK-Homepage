@@ -9,3 +9,4 @@
 ## 不要下载不是Release里的主页源码！     
 ## 不要下载不是Release里的主页源码！     
 ## 不要下载不是Release里的主页源码！     
+要下就下JTK-Homepage.zip,千万别下错
