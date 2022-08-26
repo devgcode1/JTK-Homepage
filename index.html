@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>金条k的主页</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="css/APlayer.min.css" rel="stylesheet">
+  <script src="js/APlayer.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta charset="utf-8">
+    <style>
+        .title{
+            text-shadow: 0 0 10px #dfd8d8;
+            background: linear-gradient(135deg,#14ffe9,#ffeb3b,rgb(255, 0, 225),rgb(34, 0, 255),red),green;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: ff 0.9s linear infinite;
+        }
+        @keyframes ff{
+            to{filter: hue-rotate(360deg);}
+        }
+        .line{
+            line-height: 50px;
+        }
+        .card{
+            line-height: 15px;
+        }
+        #app{
+            background-image: url(images/2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .img{
+            animation: run 12s linear infinite;
+        }
+        @keyframes run{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+	    }
+	    .renshi{
+	        line-height: 24px;
+	    }
+	    .chu{
+	        color: #FFFFFF;
+	    }
+    </style>
+</head>
+<body>
+  <div id="app">
+    <v-app>
+      <v-main>
+        <center>
+        <br><br><br><br><br>
+        <img src="images/1.jpg" class="img" width="90px" height="90px" style="border-radius: 100px;">
+        <div class="line">
+        <p class="title">金条k的主页面</p>
+        </div>
+        
+        <div class="card">
+        <v-card max-width="345px" style="backdrop-filter: blur(3px);background-color: rgba(255,255,255,0.1);">
+        <br>
+        <div class="renshi">
+        <v-card max-width="330px" style="backdrop-filter: blur(1px);background-color: rgba(255,255,255,0.1);">
+        <p class="chu">认识一下，我叫金条k<br>
+        全网1w多粉丝的一个小佬<br>
+        没事写写代码学习学习<br>
+        喜欢肝</p>
+        </v-card>
+        </div>
+        <v-btn max-width="330px" min-width="330px" color="#FF6D00" href="https://v.kuaishou.com/vXYdei">
+          关注快手金条k
+        </v-btn>
+        <br><br>
+        <v-btn max-width="330px" min-width="330px" color="#E53935" href="https://v.douyin.com/jpveff7/">
+          关注抖音金条k
+        </v-btn>
+        <br><br>
+        <v-btn max-width="330px" min-width="330px" color="#1E88E5" href="https://qm.qq.com/cgi-bin/qm/qr?k=Mj9S4d7QzIU8PQYMP1Dnt7APbckX4DEo&noverify=0&personal_qrcode_source=3">
+          金条k的qq
+        </v-btn>
+        <br><br>
+        <v-btn max-width="330px" min-width="330px" color="#4CAF50" href="path...">
+          金条k的微信
+        </v-btn>
+        <br><br>
+        <v-btn max-width="330px" min-width="330px" href="path...">
+          赞助
+        </v-btn>
+        <br><br>
+        <v-btn max-width="330px" min-width="330px" href="https://wwz.lanzoum.com/b027kzdha" onclick="lanzou()">
+          蓝奏云
+        </v-btn>
+        <br><br>
+        <v-btn max-width="330px" min-width="330px">
+          反迷你表情包收集
+        </v-btn>
+        <br><br>
+        </v-card>
+        </div>
+        </center>
+        <br>
+        <div id="aplayer"></div>
+        <br>
+<div class="footer">
+  <v-footer padless  style="backdrop-filter: blur(10px);background-color: rgba(255,255,255,0.1);">
+    <v-col
+      class="text-center"
+      cols="12"
+      style="color: #FFFFFF;"
+    >
+      {{ new Date().getFullYear() }} — <strong>金条k</strong>
+    </v-col>
+  </v-footer>
+  
+</div>
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+    })
+  </script>
+  <script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,
+    audio: [{
+        name: '耍把戏',
+        artist: '阿禹ayy',
+        url: 'http://aqqmusic.tc.qq.com/amobile.music.tc.qq.com/C400004FMWzb1BLEmy.m4a?guid=2071119720&vkey=E21DEFF3F39DDA7243E88248D5B2C4F9BD66D9555AA7FF0F494009C7396712CDE3E2EEF18F4904D9DF69C5D3157D162FB06C5FEFD95B4133&uin=&fromtag=123032',
+        cover: 'music/images/耍把戏.jpg'
+    }]
+});
+</script>
+<script>
+function lanzou() {
+    alert("密码59da", "密码")
+}
+</script>
+<script src="js/yhpl.js"></script>
+  <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+  <script type="text/javascript" src="https://cdn.okmg.cn/cdn/baozatexiao.js"></script>
+  
+</body>
+</html>
