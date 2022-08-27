@@ -4,8 +4,8 @@
 建议@金条k 你换换主界面吧，我求你了~~你的主页太难看了~~     
 
 # 效果       
-[点击查看](https://pic.amz-images-cdn.top/2022/08/27/Screenshot_20220827_114851.jpg)
-
+[点击查看图片](https://pic.amz-images-cdn.top/2022/08/27/Screenshot_20220827_114851.jpg)
+[点击查看演示站(未完成)]()
 #### 如果你们觉得好看，可以拿去用       
 可以在Release里扒出来     
 给个star不过分吧🙃     
